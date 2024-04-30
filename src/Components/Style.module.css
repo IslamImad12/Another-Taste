@@ -1,0 +1,174 @@
+:root {
+    --main-color: #39DB4A;
+}
+.logo {
+    color: var(--main-color);
+    text-align: center;
+    font-weight: bold;
+}
+.food {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.heroContainer {
+    position: relative;
+    width: fit-content;
+}
+.hero {
+    width: 270px;
+    position: absolute;
+    bottom:10%;
+    left: 12%;
+}
+.hero:hover {
+    transform: rotate(25%);
+    animation: zig 0.5s infinite;
+    cursor: pointer;
+}
+.back {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+@keyframes zig {
+    0% {
+        rotate: 0deg;
+        translate: 1px;
+    }
+    25% {
+        rotate: 1deg;
+        translate: 0;
+    }
+    50% {
+        rotate: 0deg;
+        translate: -1;
+    }
+    75% {
+        rotate: -1deg;
+        translate: 0px;
+    }
+    100% {
+        rotate: 0deg;
+        translate: 1px;
+    }
+}
+.card1 {
+    border: 2px solid white;
+    width: 40%;
+    border-radius: 15px;
+    padding: 4px;
+    
+}
+.card2 {
+    border: 2px solid white;
+    width: 40%;
+    border-radius: 15px;
+    padding: 4px;
+    
+}
+.noodles {
+    border-radius: 15px;
+    width: 30% !important;
+    height: 60px !important;
+    margin: 8px;
+}
+.freshVegetable {
+    border-radius: 15px;
+    width: 30% !important;
+    height: 60px !important;
+    margin: 8px;
+
+}
+.NoodlesCont {
+    position: relative;
+    right: 18%;
+}
+.back1 {
+    width: 70px;
+    height: 70px;
+    background-color: #C1F1C6;   
+    border-radius: 50%; 
+    position: absolute;
+    top: 13%;
+    left: 36%;
+    z-index: 1;
+
+}
+.card3 {
+    position: relative;
+    height: 100%;
+}
+.mainDish {
+    z-index: 2;
+    width: 23%;
+}
+.salad {
+    width: 80%;
+    margin: auto;
+}
+.card4 {
+    width: 80%;
+}
+.backChef {
+    height: 280px;
+    width: 300px;
+    background-color: var(--main-color);
+    border-radius: 90px 90px 21px 21px;
+}
+.chefBackground {
+    position: relative;
+}
+.chef {
+    width: 240px;
+    position: absolute;
+    top: 14%;
+    left: 9%;
+}
+.BestChefBack {
+    width: 180px;
+    height: 37px;
+    background-color: #FFFFFF;
+    border-radius: 90px 90px 90px 90px;
+    position: absolute;
+    left: 13%;
+    top: 80%;
+    
+}
+.BestChef {
+    position: absolute;
+    left: 19%;
+    top: 83%;
+}
+/* .BestChefBack:hover {
+    background-color: rgb(38, 38, 38);
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+} */
+
+
+i {
+    color: var(--main-color);
+}
+
+  
+.Emoji::after {
+    content: '😎'; /* Initial emoji */
+    transition: content 0.3s ease; /* Add a transition effect */
+}
+  
+.BestChef:hover .Emoji::after {
+    content: '😊'; /* Emoji to display on hover */
+    
+}
+.foot {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../images/textured-metal-background.jpg);
+    color: white;
+    
+}
+/*  */
